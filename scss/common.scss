@@ -1,0 +1,110 @@
+$yellow: #FF0;
+
+$largeW: 940px;
+
+#content{
+  font-size:16px;
+  width:$largeW;
+  margin:0 auto;
+  overflow:hidden;
+}
+#header{
+  height:50px;
+  width:$largeW;
+  margin:0 auto;
+  background-color:#FF0;
+}
+#main_content{
+  width:700px;
+  height:900px;
+  background-color:#EEE;
+  float:left;
+}
+#nav {
+  background-color:#000;
+  border:1px solid #000;
+  color:#FFF;
+  overflow:hidden;
+}
+  ul{
+    padding:0;
+    margin:0;
+    width:$largeW;
+    background-color:#000;
+    margin:0 auto;
+    li{
+      float:left;
+      background-color:#000;
+      list-style-type:none;
+      width:160px;
+      a{
+        color:#FFF;
+        width:100%;
+      }
+    }
+  }
+#sub_content {
+  width:220px;
+  float:right;
+  background-color:#CCC;
+}
+
+.banner {
+  height:160px;
+  margin-bottom:20px;
+  background-color:#F00;
+}
+
+#footer {
+  height:300px;
+  background-color:#0FF;
+}
+
+/*block01*/
+.block {
+  height:200px;
+}
+.block01{
+  background:liner-gradient(
+    -45deg,
+    rgba(255,255,255,.1)24.5%,
+    transparent 25.5%,
+    transparent 49.5%,
+    rgba(255,255,255,.1)50.5%,
+    rgba(255,255,255,.1)74.5%,
+    transparent 75.5%);
+  background: -webkit-linear-gradient(
+    -45deg,
+    rgba(255,255,255,.1)24.5%,
+    transparent 25.5%,
+    transparent 49.5%,
+    rgba(255,255,255,.1)50.5%,
+    rgba(255,255,255,.1)74.5%,
+    transparent 75.5%);
+  background: -moz-linear-gradient(
+    -45deg,
+    rgba(255,255,255,.1)24.5%,
+    transparent 25.5%,
+    transparent 49.5%,
+    rgba(255,255,255,.1)50.5%,
+    rgba(255,255,255,.1)74.5%,
+    transparent 75.5%);
+  background: -o-linear-gradient(
+    -45deg,
+    rgba(255,255,255,.1)24.5%,
+    transparent 25.5%,
+    transparent 49.5%,
+    rgba(255,255,255,.1)50.5%,
+    rgba(255,255,255,.1)74.5%,
+    transparent 75.5%);
+  background: -ms-linear-gradient(
+    -45deg,
+    rgba(255,255,255,.1)24.5%,
+    transparent 25.5%,
+    transparent 49.5%,
+    rgba(255,255,255,.1)50.5%,
+    rgba(255,255,255,.1)74.5%,
+    transparent 75.5%);
+    background-size:10px 10px,100% 100%;
+    background-color:#333;
+}
