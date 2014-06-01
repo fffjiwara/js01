@@ -153,31 +153,31 @@ $(function(){
 			console.log("幅："+target_obj.w+":高さ"+target_obj.h)
 			console.log("サイズ："+winObj.x+":"+winObj.y)
 
-			//$("#content").css('background-color',"#FFF");
+			$("#content").css('background-color',"#FFF");
 			console.log("場所０１");
-			posi_abs($target,0)
+			//posi_abs($target,0)
 		}else {
 			console.log('off:'+-moto_obj.y);
-			//$("#content").css('background-color',"#000");
-			posi_fixB($target,winObj.y-target_obj.h);
-			console.log("場所０2");
+			$("#content").css('background-color',"#000");
+			//posi_fixB($target,winObj.y-target_obj.h);
+			//console.log("場所０2");
 
 		}
 
 		//バナーの高さとウィンドウの高さの関係による？
-		if(under_y<winObj.y+s_obj.y+30){
+		if(under_y<winObj.y+s_obj.y){
 			if(s_obj.y>=under_y-target_obj.h){
-				//$("#content").css('background-color',"#ff0");
-				posi_abs($target,under_y-target_obj.h-moto_obj.y-60);
+				$("#content").css('background-color',"#ff0");
+				//posi_abs($target,under_y-target_obj.h-moto_obj.y);
 				console.log("場所０3");
 			}
 		}
-		$("#content").css('background-color',"#FFF");
+		//$("#content").css('background-color',"#000");
 		console.log("場所０4");
 		}else{
 			console.log('off');
 			console.log("場所０5");
-			//$("#content").css('background-color',"#ff0");
+			$("#content").css('background-color',"#ff0");
 		}
 
 		//ページ下部固定
