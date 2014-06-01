@@ -144,14 +144,21 @@ $(function(){
 		var sotai_x=moto_obj.x-target_obj.x;
 		var sotai_y=moto_obj.y-target_obj.y;
 
+
+		console.log('on:'+-moto_obj.y);
+		console.log("基準オブジェクトの位置x："+moto_obj.x+":y"+moto_obj.y);
+		console.log("ターゲットの幅："+target_obj.w+":高さ"+target_obj.h);
+		console.log("ターゲットの位置x："+target_obj.x+":y"+target_obj.y);
+		console.log("スクロールの位置x："+s_obj.x+":y"+s_obj.y);
+		console.log("ウィンドウのサイズ：x"+winObj.x+"y:"+winObj.y);
+
 		if(winObj.x>768){
 			console.log('on');
 			console.log("場所０0");
 
-		if(moto_obj.y+target_obj.h>=s_obj.y+winObj.y){
-			console.log('on:'+-moto_obj.y);
-			console.log("幅："+target_obj.w+":高さ"+target_obj.h)
-			console.log("サイズ："+winObj.x+":"+winObj.y)
+		//if(moto_obj.y+target_obj.h>=s_obj.y+winObj.y){
+		if(moto_obj.y>=s_obj.y){
+
 
 			$("#content").css('background-color',"#FFF");
 			console.log("場所０１");
@@ -160,7 +167,7 @@ $(function(){
 			console.log('off:'+-moto_obj.y);
 			$("#content").css('background-color',"#000");
 			//posi_fixB($target,winObj.y-target_obj.h);
-			//console.log("場所０2");
+			console.log("場所０2");
 
 		}
 
