@@ -181,11 +181,11 @@ $(function(){
 
 		//バナーの高さとウィンドウの高さの関係による？
 		if(under_y<winObj.y+s_obj.y){
-			if(s_obj.y>=under_y-target_obj.h){
+			//if(s_obj.y>=under_y-target_obj.h){
 				$("#content").css('background-color',"pink");
 				//posi_abs($target,under_y-target_obj.h-moto_obj.y);
 				//console.log("場所０3");
-			}
+			//}
 		}
 		//$("#content").css('background-color',"#000");
 		//console.log("場所０4");
