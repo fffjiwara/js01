@@ -4,9 +4,10 @@
   width: 940px;
   margin: 0 auto;
   overflow: hidden;
+  margin-top: 20px;
 }
 
-/* line 11, ../scss/common.scss */
+/* line 12, ../scss/common.scss */
 #header {
   height: 50px;
   width: 940px;
@@ -14,7 +15,7 @@
   background-color: #FF0;
 }
 
-/* line 17, ../scss/common.scss */
+/* line 18, ../scss/common.scss */
 #main_content {
   width: 700px;
   height: 1500px;
@@ -22,7 +23,7 @@
   float: left;
 }
 
-/* line 23, ../scss/common.scss */
+/* line 24, ../scss/common.scss */
 #nav {
   background-color: #000;
   border: 1px solid #000;
@@ -30,7 +31,7 @@
   overflow: hidden;
 }
 
-/* line 29, ../scss/common.scss */
+/* line 30, ../scss/common.scss */
 ul {
   padding: 0;
   margin: 0;
@@ -38,46 +39,46 @@ ul {
   background-color: #000;
   margin: 0 auto;
 }
-/* line 35, ../scss/common.scss */
+/* line 36, ../scss/common.scss */
 ul li {
   float: left;
   background-color: #000;
   list-style-type: none;
   width: 160px;
 }
-/* line 40, ../scss/common.scss */
+/* line 41, ../scss/common.scss */
 ul li a {
   color: #FFF;
   width: 100%;
 }
 
-/* line 46, ../scss/common.scss */
+/* line 47, ../scss/common.scss */
 #sub_content {
   width: 220px;
   float: right;
   background-color: #CCC;
 }
 
-/* line 52, ../scss/common.scss */
+/* line 53, ../scss/common.scss */
 .banner {
   height: 160px;
   margin-bottom: 20px;
   background-color: #F00;
 }
 
-/* line 58, ../scss/common.scss */
+/* line 59, ../scss/common.scss */
 #footer {
   height: 300px;
   background-color: #0FF;
 }
 
 /*block01*/
-/* line 64, ../scss/common.scss */
+/* line 65, ../scss/common.scss */
 .block {
   height: 200px;
 }
 
-/* line 67, ../scss/common.scss */
+/* line 68, ../scss/common.scss */
 .block01 {
   background: liner-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
   background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);

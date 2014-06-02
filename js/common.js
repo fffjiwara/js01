@@ -32,6 +32,12 @@
     return obj;
     }
 
+    function getDocumentSize(){
+    	var obj=new Object();
+    	obj.h = Math.max.apply( null, [document.body.clientHeight , document.body.scrollHeight, document.documentElement.scrollHeight, document.documentElement.clientHeight] );
+    	return obj;
+    }
+
     //オブジェクトの相対位置取得
     //右バナースクロール固定
     function getobj_position($target){
@@ -136,6 +142,7 @@ $(function(){
 		var $footer=$('#footer');
 		var under_y=getobj_position($footer).y;
 		var s_obj=getScrollPosition();
+		var d_obj=getDocumentSize();
 		//window
 		var winObj=getScreenSize();
 
@@ -145,46 +152,47 @@ $(function(){
 		var sotai_y=moto_obj.y-target_obj.y;
 
 
-		console.log('on:'+-moto_obj.y);
-		console.log("基準オブジェクトの位置x："+moto_obj.x+":y"+moto_obj.y);
-		console.log("ターゲットの幅："+target_obj.w+":高さ"+target_obj.h);
-		console.log("ターゲットの位置x："+target_obj.x+":y"+target_obj.y);
+		// console.log('on:'+-moto_obj.y);
+		// console.log("基準オブジェクトの位置x："+moto_obj.x+":y"+moto_obj.y);
+		// console.log("ターゲットの幅："+target_obj.w+":高さ"+target_obj.h);
+		// console.log("ターゲットの位置x："+target_obj.x+":y"+target_obj.y);
 		console.log("スクロールの位置x："+s_obj.x+":y"+s_obj.y);
 		console.log("ウィンドウのサイズ：x"+winObj.x+"y:"+winObj.y);
+		console.log("ドキュメントのサイズ："+d_obj.h+"footer位置:"+under_y);
 
 		if(winObj.x>768){
-			console.log('on');
-			console.log("場所０0");
+			//console.log('on');
+			// console.log("場所０0");
 
 		//if(moto_obj.y+target_obj.h>=s_obj.y+winObj.y){
 		if(moto_obj.y>=s_obj.y){
 
 
 			$("#content").css('background-color',"#FFF");
-			console.log("場所０１");
+			// console.log("場所０１");
 			//posi_abs($target,0)
 		}else {
-			console.log('off:'+-moto_obj.y);
+			//console.log('off:'+-moto_obj.y);
 			$("#content").css('background-color',"#000");
 			//posi_fixB($target,winObj.y-target_obj.h);
-			console.log("場所０2");
+			// console.log("場所０2");
 
 		}
 
 		//バナーの高さとウィンドウの高さの関係による？
 		if(under_y<winObj.y+s_obj.y){
 			if(s_obj.y>=under_y-target_obj.h){
-				$("#content").css('background-color',"#ff0");
+				$("#content").css('background-color',"pink");
 				//posi_abs($target,under_y-target_obj.h-moto_obj.y);
-				console.log("場所０3");
+				//console.log("場所０3");
 			}
 		}
 		//$("#content").css('background-color',"#000");
-		console.log("場所０4");
+		//console.log("場所０4");
 		}else{
-			console.log('off');
-			console.log("場所０5");
-			$("#content").css('background-color',"#ff0");
+			//console.log('off');
+			//console.log("場所０5");
+			$("#content").css('background-color',"yellow");
 		}
 
 		//ページ下部固定
