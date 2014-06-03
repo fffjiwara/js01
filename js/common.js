@@ -49,18 +49,18 @@
     	return obj;
     }
 
-    function posi_fixB($target,ypos){
+    function posi_fix($target,ypos){
 		console.log($target.css('position'))
 		if($target.css('position')!='fixed'){
 			$target.css('position','fixed');
 			$target.css('top',ypos);
 		}
 	}
-	function posi_abs($target,ypos){
-		if($target.css('position')!='relative'){
+	function posi_relative($target,ypos){
+		//if($target.css('position')!='relative'){
 			$target.css('position','relative');
 			$target.css('top',ypos);
-		}
+		//}
 	}
 	//右バナースクロール株固定
 
@@ -164,9 +164,11 @@ $(function(){
 			//console.log('on');
 			// console.log("場所０0");
 
-		//if(moto_obj.y+target_obj.h>=s_obj.y+winObj.y){
-		if(moto_obj.y>=s_obj.y){
+		if(moto_obj.y+target_obj.h>=winObj.y){
 
+
+		//bannerがwindow高さより低い場合
+		if(moto_obj.y>=s_obj.y){
 
 			$("#content").css('background-color',"#FFF");
 			// console.log("場所０１");
@@ -174,25 +176,39 @@ $(function(){
 		}else {
 			//console.log('off:'+-moto_obj.y);
 			$("#content").css('background-color',"#000");
-			//posi_fixB($target,winObj.y-target_obj.h);
+			//posi_fix($target,winObj.y-target_obj.h);
 			// console.log("場所０2");
 
 		}
 
+		//bannerがwindow高さより高い場合
+		if(moto_obj.y+target_obj.h<=s_obj.y+winObj.y){
+			posi_fix($target,winObj.y-target_obj.h);
+			console.log(winObj.y-target_obj.h);
+			$("#main_content").css('background-color',"#000");
+			if(s_obj.y+winObj.y>=under_y){
+				posi_relative($target,under_y-target_obj.h-moto_obj.y);
+			}
+
+		}else{
+			$("#main_content").css('background-color',"#F00");
+			posi_relative($target,0);
+		}
+
+
 		//バナーの高さとウィンドウの高さの関係による？
-		if(under_y<winObj.y+s_obj.y){
+		//if(under_y<winObj.y+s_obj.y){
 			//if(s_obj.y>=under_y-target_obj.h){
-				$("#content").css('background-color',"pink");
+				//$("#content").css('background-color',"pink");
 				//posi_abs($target,under_y-target_obj.h-moto_obj.y);
 				//console.log("場所０3");
 			//}
-		}
+		//}
+
 		//$("#content").css('background-color',"#000");
 		//console.log("場所０4");
-		}else{
-			//console.log('off');
-			//console.log("場所０5");
-			$("#content").css('background-color',"yellow");
+		/*bannerの高さがウィンドウの高さ以上ここまで１*/}
+
 		}
 
 		//ページ下部固定

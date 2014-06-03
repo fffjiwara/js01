@@ -44,6 +44,8 @@ $largeW: 940px;
       }
     }
   }
+
+//banner
 #sub_content {
   width:220px;
   float:right;
@@ -54,6 +56,11 @@ $largeW: 940px;
   height:160px;
   margin-bottom:20px;
   background-color:#F00;
+  width:220px;
+}
+#banner_group{
+  position: relative;
+  top:0;
 }
 
 #footer {

@@ -52,33 +52,40 @@ ul li a {
   width: 100%;
 }
 
-/* line 47, ../scss/common.scss */
+/* line 49, ../scss/common.scss */
 #sub_content {
   width: 220px;
   float: right;
   background-color: #CCC;
 }
 
-/* line 53, ../scss/common.scss */
+/* line 55, ../scss/common.scss */
 .banner {
   height: 160px;
   margin-bottom: 20px;
   background-color: #F00;
+  width: 220px;
 }
 
-/* line 59, ../scss/common.scss */
+/* line 61, ../scss/common.scss */
+#banner_group {
+  position: relative;
+  top: 0;
+}
+
+/* line 66, ../scss/common.scss */
 #footer {
   height: 300px;
   background-color: #0FF;
 }
 
 /*block01*/
-/* line 65, ../scss/common.scss */
+/* line 72, ../scss/common.scss */
 .block {
   height: 200px;
 }
 
-/* line 68, ../scss/common.scss */
+/* line 75, ../scss/common.scss */
 .block01 {
   background: liner-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
   background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
