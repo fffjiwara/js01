@@ -101,12 +101,12 @@ function banner_move(banner,banner_parent,footer){
 		if(baseObj.y+targetObj.h<=scrollObj.y+winObj.y){
 			posi_fix($target,winObj.y-targetObj.h);
 			console.log(winObj.y-targetObj.h);
-			$("#main_content").css('background-color',"#000");
+			//$("#main_content").css('background-color',"#000");
 			if(scrollObj.y+winObj.y>=fotterY){
 				posi_relative($target,fotterY-targetObj.h-baseObj.y);
 			}
 		}else{
-			$("#main_content").css('background-color',"#F00");
+			//$("#main_content").css('background-color',"#F00");
 			posi_relative($target,0);
 			}
 			/*bannerの高さがウィンドウの高さ以上ここまで*/
@@ -116,7 +116,7 @@ function banner_move(banner,banner_parent,footer){
 				$("#content").css('background-color',"#FFF");
 				posi_fix($target,0)
 			}else {
-				$("#content").css('background-color',"#000");
+				//$("#content").css('background-color',"#000");
 				posi_relative($target,0);
 			}
 			/*bannerの高さがウィンドウの高さ以下ここまで*/

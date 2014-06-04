@@ -18,7 +18,7 @@ $largeW: 940px;
 #main_content{
   width:700px;
   height:1500px;
-  background-color:#EEE;
+  //background-color:#EEE;
   float:left;
 }
 #nav {
@@ -116,3 +116,95 @@ $largeW: 940px;
     background-size:10px 10px,100% 100%;
     background-color:#333;
 }
+
+//form
+.std_form{
+  .input_line{
+    position: relative;
+    margin-bottom: 1em;
+    overflow: hidden;
+  }
+  .tag {
+    text-align: right;
+    width: 18%;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  .input_right {
+    width:70%;
+    margin-left: 20%;
+  }
+  .text{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 4px 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+    background-color: #FFF;
+    background-image: none;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+  }
+
+  .btn {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid #999;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
+    -moz-user-select: none;
+    &:hover{
+      background:#FFF;
+    }
+  }
+}
+.btn_center{
+  text-align: center;
+}
+.search_line{
+  background: liner-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background-size: 10px 10px,100% 100%;
+  background: #333;
+  color:#FFF;
+  padding:5px 15px;
+  position: relative;
+  &:after {//三角
+    content: ' ';
+    height: 0;
+    position: absolute;
+    width: 0;
+    border: 10px solid transparent;
+    border-top-color: #333;
+    top: 100%;
+    left: 10px;
+  }
+}
+.box{
+  background: liner-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 24.5%, transparent 25.5%, transparent 49.5%, rgba(255, 255, 255, 0.1) 50.5%, rgba(255, 255, 255, 0.1) 74.5%, transparent 75.5%);
+  background-size: 10px 10px,100% 100%;
+  background-color: #CCC;
+  padding: 15px;
+}
+
+
